@@ -1,0 +1,1 @@
+An Odin project showcasing all that I have learned so far in the curriculum. Thank you for whoever stopped by to see!
