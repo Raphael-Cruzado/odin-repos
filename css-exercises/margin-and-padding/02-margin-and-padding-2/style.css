@@ -8,26 +8,38 @@ body {
   background: #fff;
   margin: 16px auto;
   /**/
-  padding: 5px;
+  padding: 8px;
 }
 
 .title {
   background: #e3f4ff;
   /**/
-  font-size: 25px;
+  font-size: 16px;
+
+  margin-top: 0;
+  margin-bottom: 8px;
+  padding: 8px;
 }
 
 .content {
   background: #e3f4ff;
-  /*  */
-  padding: 15px;
+  /* */
+  margin-bottom: 8px;
+  padding: 16px 8px;
 }
 
 .button-container {
   background: #e3f4ff;
+  padding: 8px;
+  /**/
+  text-align: center;
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  /* */
+  display: block; /*this is to give the property take up its own line*/
+  margin: 0 auto; /*the first # is for the top & bottom margin, the second is to center the left & right margin*/
+  padding: 8px 24px;
 }
