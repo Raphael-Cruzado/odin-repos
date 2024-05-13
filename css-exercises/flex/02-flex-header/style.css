@@ -4,7 +4,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 0px;
 }
 
 .logo {
@@ -21,6 +20,9 @@ ul {
   list-style-type: none;
   display: flex;
   margin: 10px;
+  /* padding-inline-start has a default property of 40px cause its a list 
+   so that's why you have to set padding to 0 */
+  padding: 0;
   gap: 10px;
 }
 
