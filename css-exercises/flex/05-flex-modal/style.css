@@ -20,6 +20,8 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+  /**/
+  display: flex;
 }
 
 .icon {
@@ -56,6 +58,12 @@ button {
   border-radius: 8px;
 }
 
+.content-container {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+}
+
 button.continue {
   background: royalblue;
   border: 1px solid royalblue;
@@ -66,4 +74,9 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/**/
+.buttons-container {
+  display: flex;
 }
