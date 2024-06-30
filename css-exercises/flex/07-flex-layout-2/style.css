@@ -65,7 +65,14 @@ body {
 }
 
 .card-container .card {
+  flex: 1 1 calc(33.333% - 16px);
   padding: 32px;
   box-sizing: border-box;
   margin: 8px;
+}
+
+@media (max-width: 950px) {
+  .card-container .card {
+    flex: 1 1 calc(50% - 16px);
+  }
 }
