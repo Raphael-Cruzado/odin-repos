@@ -1,0 +1,29 @@
+
+body {
+    padding: 0 45px 0 45px;
+}
+
+.header, .hero {
+    background-color: #1f2937;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.right-links ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
