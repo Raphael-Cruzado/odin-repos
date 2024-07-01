@@ -1,11 +1,14 @@
 
 body {
-    padding: 0 45px 0 45px;
+    margin: 0;
+    padding: 0 55vh;
 }
 
 .header, .hero {
     background-color: #1f2937;
-    color: white;
+    color: #F9FAF8;
+    margin: 0 -55vh;
+    padding: 0 55vh;
 }
 
 .header {
@@ -24,6 +27,8 @@ body {
 .right-links ul {
     display: flex;
     list-style-type: none;
+    justify-content: space-between;
+    font-size: smaller;
     margin: 0;
     padding: 0;
 }
