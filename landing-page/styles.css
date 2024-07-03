@@ -15,13 +15,18 @@ body {
     flex-direction: column;   
 }
 
+.fit-to-body {
+    width: 100%;
+    padding: 0 100px;
+    box-sizing: border-box;
+    padding: 0 250px;
+}
+
 /*------------------HEADER CSS------------------*/
 .header, .hero-container, .footer {
     background-color: #1f2937;
     color: #F9FAF8;
-    width: 100%;
-    padding: 0 100px;
-    box-sizing: border-box;
+    
 }
 
 .header, .footer {
@@ -120,11 +125,5 @@ body {
 
     .left-logo {
         font-size: 18px;
-    }
-}
-
-@media only screen and (min-width: 1500px) {
-    .header, .hero-container, .footer {
-        padding: 0 250px;
     }
 }
