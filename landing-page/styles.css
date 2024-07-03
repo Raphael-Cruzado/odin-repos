@@ -4,19 +4,28 @@
 
 
 body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
     margin: 0;
     padding: 0 100px;
 }
 
+.landing-page {
+    flex: 1;
+    display: flex;
+    flex-direction: column;   
+}
+
 /*------------------HEADER CSS------------------*/
-.header, .hero {
+.header, .hero, .footer {
     background-color: #1f2937;
     color: #F9FAF8;
     margin: 0 -100px;
     padding: 0 100px;
 }
 
-.header {
+.header, .footer {
     display: flex;
     align-items: center;
     width: 100%;
@@ -49,11 +58,20 @@ body {
 .right-links ul li {
     margin: 0 15px;
 }
-/*------------------------------------------------*/
+/*------------------HERO CSS--------------------*/
+
+
+/*------------------FOOTER CSS------------------*/
+.footer {
+    margin-top: auto;
+    display: flex;
+    justify-content: center;
+}
 
 @media only screen and (max-width: 907px) {
     body {
         font-size: smaller;
+        padding: 0 20px;
     }
 
     .left-logo {
@@ -66,7 +84,7 @@ body {
         padding:0 250px
     }
 
-    .header, .hero {
+    .header, .hero, .footer {
         margin: 0 -250px;
         padding: 0 250px;
     }
