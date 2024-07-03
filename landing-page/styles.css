@@ -18,7 +18,7 @@ body {
 }
 
 /*------------------HEADER CSS------------------*/
-.header, .hero, .footer {
+.header, .hero-container, .footer {
     background-color: #1f2937;
     color: #F9FAF8;
     margin: 0 -100px;
@@ -59,13 +59,55 @@ body {
     margin: 0 15px;
 }
 /*------------------HERO CSS--------------------*/
+.hero-container {
+    flex: 1;
+    display: flex;
+    padding: 85px 0;
+    
+}
 
+.hero-text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* padding: 85px 85px 85px 0; */
+}
+
+.hero-img {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-img img {
+    width: 100%;
+    padding: 85px 0;
+
+}
+
+/*-----------------ROW-2-------------------*/
+
+.row-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-3 {
+    flex: 1;
+}
+ .row-4 {
+    flex: 1;
+ }
 
 /*------------------FOOTER CSS------------------*/
 .footer {
     margin-top: auto;
     display: flex;
     justify-content: center;
+    font-size: smaller;
 }
 
 @media only screen and (max-width: 907px) {
@@ -84,7 +126,7 @@ body {
         padding:0 250px
     }
 
-    .header, .hero, .footer {
+    .header, .hero-container, .footer {
         margin: 0 -250px;
         padding: 0 250px;
     }
