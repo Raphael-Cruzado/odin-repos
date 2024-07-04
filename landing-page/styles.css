@@ -18,7 +18,17 @@ body {
 
 .fit-to-body {
     width: 100%;
-    padding: 0 250px;
+    padding: 0 175px;
+}
+
+.button {
+    font-weight: bolder;
+    max-width: 30%;
+    height: 31px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 6px;
+    box-shadow: none;
 }
 
 /*------------------HEADER CSS------------------*/
@@ -73,7 +83,7 @@ body {
     flex-direction: column;
     justify-content: center;
     max-width: 50%;
-    padding: 100px;
+    padding: 100px 100px 100px 0;
 }
 
 .hero-img {
@@ -94,14 +104,24 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .boxes-container {
     display: flex;
+    justify-content: center;
 }
 
 .box-container {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.box-container p {
+    display: flex;
+    justify-content: center;
 }
 
 .blue-box {
@@ -120,8 +140,9 @@ body {
 }
 
 @media only screen and (max-width: 907px) {
-    .header, .hero-container, .footer {
-        padding: 0 20px;
+    .fit-to-body, .hero-container {
+        padding: 0 100px;
+        font-size: smaller;
     }
 
     .left-logo {
