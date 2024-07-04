@@ -23,7 +23,7 @@ body {
 
 .button {
     font-weight: bolder;
-    max-width: 30%;
+    width: 115px;
     height: 31px;
     background-color: #3882F6;
     color: #F9FAF8;
@@ -141,12 +141,40 @@ body {
     height: 100%;
     background-color: #E5E7EB;
     justify-content: center;
-    font-style: italic;
-    font-size: 3.3rem;
+    font-size: 36px;
     padding: 60px 350px;
 }
 
+.row-3-container h4 {
+    padding-left: 75%;
+    white-space: nowrap;
+}
 
+
+/* ------------------ROW 4------------------- */
+.row-4 {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.action-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 80px;
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border-radius: 5px;
+    width: 80%;
+}
+
+.row-4 .button {
+    border: 2px solid whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /*------------------FOOTER CSS------------------*/
