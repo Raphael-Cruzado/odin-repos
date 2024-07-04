@@ -35,13 +35,12 @@ body {
 .header, .hero-container, .footer {
     background-color: #1f2937;
     color: #F9FAF8;
-    
 }
 
 .header, .footer {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 80px;
 }
 
 .header-content {
@@ -99,7 +98,7 @@ body {
     box-sizing: border-box;
 }
 
-/*-----------------ROW-2-------------------*/
+/*--------------------ROW-2-------------------*/
 .row-2-container {
     flex: 1;
     display: flex;
@@ -110,6 +109,7 @@ body {
 .boxes-container {
     display: flex;
     justify-content: center;
+    padding-bottom: 50px;
 }
 
 .box-container {
@@ -117,19 +117,34 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 
 .box-container p {
-    display: flex;
-    justify-content: center;
+    width: 50%;
 }
 
 .blue-box {
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
     border: 3px solid blue;
-    border-radius: 10px;
+    border-radius: 14px;
+    border-width: 5px;
 }
+
+/* --------------------ROW 3-------------------- */
+.row-3-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #E5E7EB;
+    justify-content: center;
+}
+
+
+
 
 /*------------------FOOTER CSS------------------*/
 .footer {
@@ -139,10 +154,15 @@ body {
     font-size: smaller;
 }
 
-@media only screen and (max-width: 907px) {
+@media only screen and (max-width: 1200px) {
     .fit-to-body, .hero-container {
         padding: 0 100px;
         font-size: smaller;
+    }
+
+    .blue-box {
+        height: 150px;
+        width: 150px;
     }
 
     .left-logo {
