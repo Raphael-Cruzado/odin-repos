@@ -40,7 +40,7 @@ body {
 .header, .footer {
     display: flex;
     align-items: center;
-    height: 80px;
+    min-height: 50px;
 }
 
 .header-content {
@@ -141,6 +141,9 @@ body {
     height: 100%;
     background-color: #E5E7EB;
     justify-content: center;
+    font-style: italic;
+    font-size: 3.3rem;
+    padding: 60px 350px;
 }
 
 
