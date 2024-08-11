@@ -7,8 +7,6 @@ BEGIN
 5) game plays 5 rounds
 
 -----------------------------------------------------
-3) SET humanScore = 0
-3) SET computerScore = 0
 
     1)FUNCTION getComputerChoice():
     // this function randomly generates the computer's choice
@@ -40,6 +38,9 @@ BEGIN
         d)RETURN userChoice
     END FUNCTION
 
+    3) SET humanScore = 0
+    3) SET computerScore = 0
+
     4)FUNCTION playGame():
     // this function takes both human and computer choices and compares them
         a) invoke prompt in loop for user & computer choices
@@ -47,4 +48,5 @@ BEGIN
         b) increment global variable depending on winner
     5)  c) repeat 5 times
     ------------------------------------------------
+    END FUNCTION
 END
