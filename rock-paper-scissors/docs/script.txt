@@ -40,8 +40,9 @@ BEGIN
         d)RETURN userChoice
     END FUNCTION
 
-    4)FUNCTION playGame(humanChoice, computerChoice):
+    4)FUNCTION playGame():
     // this function takes both human and computer choices and compares them
+        a) invoke prompt in loop for user & computer choices
         a) compare both choices
         b) increment global variable depending on winner
     5)  c) repeat 5 times
