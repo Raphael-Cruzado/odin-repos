@@ -1,0 +1,48 @@
+BEGIN 
+// console game where you duel against fate
+1) get computer's draw
+2) get user's draw
+3) initiate global variables
+4) compare both draws to declare a winner
+
+-----------------------------------------------------
+3) SET humanScore = 0
+3) SET computerScore = 0
+
+    1)FUNCTION getComputerChoice():
+    // this function randomly generates the computer's choice
+    a) generate random number
+    b) use random number 
+    c) return "rock paper or scissors"
+    ------------------------------------------
+        a)SET randomNumber TO Math.random() * 100
+
+        b)IF randomNumber < 33 THEN 
+            c)RETURN "rock"
+        ELSE IF randomNumber < 66 THEN
+            c)RETURN "paper"
+        ELSE
+            RETURN "scissors"
+        END IF       
+    END FUNCTION
+
+    2)FUNCTION getHumanChoice():
+    // this function takes and returns input
+    a) prompt to get input 
+    b) make humanChoice case sensitive
+    c) invalidate anything that is not rock paper or scissor
+    d) return input
+    -----------------------------------------------
+        a)PROMPT user for choice
+        b)SET choice = choice.toLowerCase()
+        c)FOR loop to iterate until user gets it right
+        d)RETURN userChoice
+    END FUNCTION
+
+    4)FUNCTION playRound(humanChoice, computerChoice):
+    // this function takes both human and computer choices and compares them
+    a) compare both choices
+    b) increment global variable depending on winner
+    ------------------------------------------------
+
+END
