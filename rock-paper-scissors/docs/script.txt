@@ -4,6 +4,7 @@ BEGIN
 2) get user's draw
 3) initiate global variables
 4) compare both draws to declare a winner
+5) game plays 5 rounds
 
 -----------------------------------------------------
 3) SET humanScore = 0
@@ -39,10 +40,10 @@ BEGIN
         d)RETURN userChoice
     END FUNCTION
 
-    4)FUNCTION playRound(humanChoice, computerChoice):
+    4)FUNCTION playGame(humanChoice, computerChoice):
     // this function takes both human and computer choices and compares them
-    a) compare both choices
-    b) increment global variable depending on winner
+        a) compare both choices
+        b) increment global variable depending on winner
+    5)  c) repeat 5 times
     ------------------------------------------------
-
 END

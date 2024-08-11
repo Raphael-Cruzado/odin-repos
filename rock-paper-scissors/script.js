@@ -13,7 +13,7 @@ function getComputerChoice() {
 function getHumanChoice() {
     let choice;
 
-    for (;;) { // Infinite loop
+    for (;;) {
         choice = prompt("Please enter rock, paper, or scissor");
         choice = choice.toLowerCase();
 
@@ -25,32 +25,43 @@ function getHumanChoice() {
     }
 }
 
-/*
-FUNCTION playRound(humanChoice, computerChoice):
-    // this function takes both human and computer choices and compares them
-    a) compare both choices
-    b) increment global variable depending on winner
-*/
-
 let humanScore = 0;
 let computerScore = 0;
 
-function playRound(humanChoice, computerChoice) {
-    if ((humanChoice == "rock" && computerChoice == "scissor") || (humanChoice == "paper" && computerChoice == "rock") || (humanChoice == "scissor" && computerChoice == "rock")) {
-        humanScore += 1;
-    } else if (humanChoice == computerChoice) {
-        console.log("it's a tie!")
-    } else {
-        computerScore +=1;
+function playGame() {
+    for (let i = 1; i < 6; i++) {
+        let humanChoice = getHumanChoice();
+        let computerChoice = getComputerChoice();
+        if ((humanChoice == "rock" && computerChoice == "scissor") || (humanChoice == "paper" && computerChoice == "rock") || (humanChoice == "scissor" && computerChoice == "rock")) {
+            humanScore += 1;
+            console.log("you chose: ", humanChoice);
+            console.log("computer chose: ", computerChoice);
+            console.log("you: ", humanScore);
+            console.log("computer: ", computerScore);
+            console.log("-----------------------------------")
+        } else if (humanChoice == computerChoice) {
+            console.log("you chose: ", humanChoice);
+            console.log("computer chose: ", computerChoice);
+            console.log("you: ", humanScore);
+            console.log("computer: ", computerScore);
+            console.log("-----------------------------------")
+        } else {
+            computerScore +=1;
+            console.log("you chose: ", humanChoice);
+            console.log("computer chose: ", computerChoice);
+            console.log("you: ", humanScore);
+            console.log("computer: ", computerScore);
+            console.log("-----------------------------------")
+        }
     }
 }
 
-const humanSelection = getHumanChoice();
-const computerSelection = getComputerChoice();
+playGame();
 
-playRound(humanSelection, computerSelection);
-
-console.log("you chose: ", humanSelection);
-console.log("computer chose: ", computerSelection);
-console.log("you: ", humanScore);
-console.log("computer: ", computerScore);
+if (humanScore > computerScore) {
+    alert("you won!")
+} else if (computerScore > humanScore) {
+    alert("the computer won :( refresh page to play again")
+} else {
+    alert("it's a Draw !! refresh page to play again")
+}
